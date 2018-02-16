@@ -5,7 +5,7 @@ This project contains a demo of a MasterDetailPage in xamarin.
 Create a new Crossplatform (Xamarin.Forms) application. <br />
 Navigate to the MainPage.xaml and set the ```<ContentPage>``` tag to ```<MasterDetailPage>```. <br />
 Example: <br />
-```
+```xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MasterPageDemo.MainPage"
@@ -18,7 +18,7 @@ Example: <br />
 Following you need to create a new ContentPage for the detail page of your application.
 This page contains the details of each menu item. <br />
 An example of a detail page:
-``` 
+``` xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MasterPageDemo.MasterPageDetail"
@@ -33,7 +33,7 @@ You will find an example of a master page in this project.
 After setting up you MasterPage.xaml you have to create a class for your menu items. 
 Then you need to set up a ViewModel for your MasterPage, containing an ObservableCollection of your menu items.
 At the end you have to declare the MasterPage and the DetailPage in your MainPage.xaml as follows:
-```
+``` xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MasterPageDemo.MainPage"
