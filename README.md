@@ -36,14 +36,16 @@ The last step is to declare the MasterPage and the DetailPage in your **MainPage
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   x:Class="MasterPageDemo.MainPage"
-                  xmlns:pages="clr-namespace:MasterPageDemo">
+                  xmlns:page="clr-namespace:MasterPageDemo">
     <MasterDetailPage.Master>
-        <pages:MasterPage x:Name="LocalMasterPage" />
+        <!--MasterPage-->
+        <page:MasterPage x:Name="LocalMasterPage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <pages:DetailPage />
+                <!--DetailPage-->
+                <page:DetailPage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>
