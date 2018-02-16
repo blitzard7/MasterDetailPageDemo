@@ -7,9 +7,9 @@ Navigate to the MainPage.xaml and set the ```<ContentPage>``` tag to ```<MasterD
 Example: <br />
 ```xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MasterPageDemo.MainPage"
-             xmlns:pages="clr-namespace:MasterPageDemo">
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="MasterPageDemo.MainPage"
+                  xmlns:pages="clr-namespace:MasterPageDemo">
              
              ....
              ....
@@ -35,9 +35,9 @@ Then you need to set up a ViewModel for your MasterPage, containing an Observabl
 At the end you have to declare the MasterPage and the DetailPage in your MainPage.xaml as follows:
 ``` xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MasterPageDemo.MainPage"
-             xmlns:pages="clr-namespace:MasterPageDemo">
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="MasterPageDemo.MainPage"
+                  xmlns:pages="clr-namespace:MasterPageDemo">
     <MasterDetailPage.Master>
         <pages:MasterPage x:Name="LocalMasterPage" />
     </MasterDetailPage.Master>
