@@ -4,11 +4,13 @@
              xmlns:page="clr-namespace:MasterDemo"
              x:Class="MasterDemo.MainPage">
     <MasterDetailPage.Master>
+        <!--MasterPage-->
         <page:MasterPage x:Name="LocalMasterPage" />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
+                <!--DetailPage-->
                 <page:DetailPage />
             </x:Arguments>
         </NavigationPage>
