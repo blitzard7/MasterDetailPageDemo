@@ -30,9 +30,9 @@ An example of a detail page:
 ``` 
 Next you need to create a new ContentPage for your master page.
 This page shows a list of items.
-Create a class for your menu items and bind them as an ItemSource in the ListView of your MasterPage.xaml.
-You will find an example of a master page in this project [MasterPage](MasterDetailPageDemo/src/MasterDemo/MasterDemo/MasterPage.xaml). 
-The next step is to create a view model for your MasterPage, containing an ObservableCollection of your menu items.
+Create a class for your [MenuItems](https://github.com/blitzard7/MasterDetailPageDemo/blob/master/src/MasterDemo/MasterDemo/MenuItem.cs) and bind them as an ItemSource in the ListView of your MasterPage.xaml.
+You will find an example of a master page [MasterPage.xaml](https://github.com/blitzard7/MasterDetailPageDemo/blob/master/src/MasterDemo/MasterDemo/MasterPage.xaml) in this project. 
+The next step is to create a view model for your MasterPage, containing an ObservableCollection of your menu items ([ViewModel](https://github.com/blitzard7/MasterDetailPageDemo/blob/master/src/MasterDemo/MasterDemo/MasterPageViewModel.cs).
 The last step is to declare the MasterPage and the DetailPage in your MainPage.xaml as follows:
 ``` xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
