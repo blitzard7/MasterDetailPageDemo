@@ -1,0 +1,2 @@
+# MasterDetailPageDemo
+Xamarin MasterDetailPage Demo
