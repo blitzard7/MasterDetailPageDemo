@@ -1,10 +1,10 @@
 # MasterDetailPageDemo
-This project contains a demo of a MasterDetailPage in xamarin.
+This project will show you how to set up a simple MasterDetailPage in Xamarin.
 
-## Creating a MasterDetailPage
-Create a new Crossplatform (Xamarin.Forms) application. <br />
-Navigate to the MainPage.xaml and set the ```<ContentPage>``` tag to ```<MasterDetailPage>```. <br />
-Example: <br />
+## Create the MasterDetailPage
+Create a new Cross-Platform App (Xamarin.Forms) project. 
+Then navigate to the MainPage.xaml and set the ```<ContentPage>``` tag to ```<MasterDetailPage>```. <br />
+Example:
 ```xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -15,8 +15,8 @@ Example: <br />
              ....
 </MasterDetailPage>
 ``` 
-Following you need to create a new ContentPage for the detail page of your application.
-This page contains the details of each menu item. <br />
+Next you need to create a new ContentPage which will be your detail page.
+A detail page presents details about items on the master page. <br />
 An example of a detail page:
 ``` xaml
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -28,11 +28,12 @@ An example of a detail page:
   </StackLayout>
 </ContentPage>
 ``` 
-Create a new ContentPage for your master page, where you will bind your menu items as an ItemSource in a ListView.
-You will find an example of a master page in this project. 
-After setting up you MasterPage.xaml you have to create a class for your menu items. 
-Then you need to set up a ViewModel for your MasterPage, containing an ObservableCollection of your menu items.
-At the end you have to declare the MasterPage and the DetailPage in your MainPage.xaml as follows:
+Next you need to create a new ContentPage for your master page.
+This page shows a list of items.
+Create a class for your menu items and bind them as an ItemSource in the ListView of your MasterPage.xaml.
+You will find an example of a master page in this project [MasterPage](MasterDetailPageDemo/src/MasterDemo/MasterDemo/MasterPage.xaml). 
+The next step is to create a view model for your MasterPage, containing an ObservableCollection of your menu items.
+The last step is to declare the MasterPage and the DetailPage in your MainPage.xaml as follows:
 ``` xaml
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
