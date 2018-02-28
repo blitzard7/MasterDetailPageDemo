@@ -8,7 +8,7 @@ namespace MasterDemo
 		{
 			InitializeComponent();
 
-			MainPage = new MasterDemo.MainPage();
+			MainPage = new MasterDemo.Views.LoginPage();
 		}
 
 		protected override void OnStart()

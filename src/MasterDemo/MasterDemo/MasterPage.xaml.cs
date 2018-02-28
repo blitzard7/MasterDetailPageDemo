@@ -11,10 +11,9 @@ namespace MasterDemo
 		public MasterPage()
 		{
 			InitializeComponent();
-
+            
             BindingContext = new MasterPageViewModel();
             ListView = MenuItemsListView;
-            
         }
 	}
 }

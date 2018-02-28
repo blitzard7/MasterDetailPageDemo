@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MasterDemo.Views;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace MasterDemo
 {
@@ -19,11 +17,11 @@ namespace MasterDemo
         {
             // defining the menu items.
             MenuItems = new ObservableCollection<MenuItem>(new[]
-            {
-                    new MenuItem { Id = 0, Title = "Page 1" },
-                    new MenuItem { Id = 1, Title = "Page 2" },
-                    new MenuItem { Id = 2, Title = "Page 3" },
-                    new MenuItem { Id = 3, Title = "Page 4" },
+            {                    
+                    new MenuItem { Title = "Home", TargetType = typeof(HomePage) },
+                    new MenuItem { Title = "Profile", TargetType = typeof(ProfilePage) },
+                    new MenuItem { Title = "Logout", TargetType = typeof(LogoutPage) },
+                    new MenuItem { Title = "TabbedPage", TargetType = typeof(MainTabbedPage)}
             });
         }
 

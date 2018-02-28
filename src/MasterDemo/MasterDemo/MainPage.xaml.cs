@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MasterDemo.Views;
+using System;
 using Xamarin.Forms;
 
 namespace MasterDemo
@@ -22,6 +23,12 @@ namespace MasterDemo
             var item = e.SelectedItem as MenuItem;
             if (item == null)
                 return;
+
+            if (item.TargetType == typeof(MainTabbedPage))
+            {
+                Navigation.PushModalAsync(new MainTabbedPage());
+                return;
+            }
 
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;

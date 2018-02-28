@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDemo.Views.LogoutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="I hope you enjoyed my demo of a MasterDetailPage with a TabbedPage :)"/>
+            <Button Text="Logout" Clicked="OnLogoutClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

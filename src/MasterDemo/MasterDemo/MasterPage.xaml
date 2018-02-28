@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:page="clr-namespace:MasterDemo"
              x:Class="MasterDemo.MasterPage"
              Title="Master">
     <StackLayout>
@@ -21,11 +22,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="10"/>
                     </Grid.RowDefinitions>
-                    <Label
-              Grid.Column="1"
-              Grid.Row="2"
-              Text="DemoApplication"
-              Style="{DynamicResource SubtitleStyle}"/>
+                    <Label Grid.Column="1" Grid.Row="2" Text="DemoApplication" Style="{DynamicResource SubtitleStyle}"/>
                 </Grid>
             </ListView.Header>
             <ListView.ItemTemplate>
@@ -33,9 +30,9 @@
                     <ViewCell>
                         <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand">
                             <Label VerticalOptions="FillAndExpand" 
-                    VerticalTextAlignment="Center" 
-                    Text="{Binding Title}" 
-                    FontSize="24"/>
+                                    VerticalTextAlignment="Center" 
+                                    Text="{Binding Title}" 
+                                    FontSize="16"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
