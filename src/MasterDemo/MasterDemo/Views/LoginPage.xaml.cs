@@ -19,10 +19,10 @@ namespace MasterDemo.Views
 
         private void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            if (!(string.IsNullOrEmpty(usernameEntry.Text) && string.IsNullOrEmpty(passwordEntry.Text)))
-            {
-                Navigation.PushModalAsync(new MainPage());
-            }
+            // insert your login logic here. 
+
+            // used to navigate to the master detail page.
+            Navigation.PushModalAsync(new MainPage());
         }
     }
 }
